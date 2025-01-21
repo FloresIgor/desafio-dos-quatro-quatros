@@ -1,0 +1,245 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9fc;
+  color: #333;
+}
+
+header {
+  background-color: rgb(91, 42, 165);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+  background-color: rgb(70, 35, 140);
+}
+
+button#toggle-dark-mode {
+  margin-top: 15px;
+  padding: 5px 10px;
+  background-color: #f3f3f3;
+  border: 1px solid rgb(91, 42, 165);
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(91, 42, 165);
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button#toggle-dark-mode:hover {
+  background-color: rgb(91, 42, 165);
+  color: white;
+}
+
+h1, h2, h3 {
+  color: rgb(91, 42, 165);
+  margin-bottom: 15px;
+}
+
+h2 {
+  border-bottom: 2px solid rgb(91, 42, 165);
+  display: inline-block;
+}
+
+h3 {
+  color: rgb(91, 42, 165);
+  margin-top: 20px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: rgb(50, 50, 122);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.table-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.table-block {
+  flex: 1;
+  min-width: 300px;
+  max-width: calc(33.33% - 20px);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: rgb(91, 42, 165);
+  color: white;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: rgb(240, 240, 255);
+}
+
+table tbody tr:hover {
+  background-color: rgb(220, 220, 245);
+}
+
+main {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #7345b5;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(91, 42, 165);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollToTop:hover {
+  background-color: rgb(70, 35, 140);
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode nav a {
+  color: #ffffff;
+}
+
+body.dark-mode nav a:hover, body.dark-mode nav a.active {
+  background-color: #333333;
+}
+
+body.dark-mode button#toggle-dark-mode {
+  background-color: #333333;
+  color: white;
+}
+
+body.dark-mode .table-block {
+  background-color: #1e1e1e;
+  border-color: #333333;
+}
+
+body.dark-mode table th {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode table tbody tr:nth-child(odd) {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode table tbody tr:hover {
+  background-color: #333333;
+}
+
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  .table-block {
+    max-width: 100%;
+  }
+
+  table th, table td {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+}

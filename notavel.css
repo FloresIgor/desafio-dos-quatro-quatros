@@ -1,0 +1,58 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+table th {
+    background-color: #5b2aa5;
+    color: white;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #e6e6ff;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#rodape {
+    text-align: center !important;
+}
+
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
